@@ -40,6 +40,7 @@ async function seed() {
     Agent.create({
       firstName: 'Jordan',
       lastName: 'McQueen',
+      photoUrl: 'https://i.picsum.photos/id/1011/5472/3648.jpg?hmac=Koo9845x2akkVzVFX3xxAc9BCkeGYA9VRVfLE4f0Zzk',
       agentLicence: '123321890',
       address: '53 W 53rd St, New York, NY 10019, United States',
       practiceAreas: ['New York'].join(','),

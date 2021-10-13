@@ -52,7 +52,7 @@ const FormModal: FC<Props> = (props) => {
         agentLicence: agentLicence,
         address: address,
         practiceAreas: practiceAreas,
-        boutMe: aboutMe,
+        aboutMe: aboutMe,
         photoUrl: photoUrl,
       },
       {
@@ -65,6 +65,15 @@ const FormModal: FC<Props> = (props) => {
       .then((res: any) => {
         console.log(res);
         props.fetchInitialData();
+        setShow(false)
+        setUserInfoData({
+          firstName: "",
+          lastName: "",
+          agentLicence: "",
+          address: "",
+          practiceAreas: "",
+          aboutMe: "",
+        })
       })
       .catch((err: any) => {
         console.log(err);

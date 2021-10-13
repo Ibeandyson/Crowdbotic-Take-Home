@@ -20,8 +20,8 @@ app.post("/agent/add", async (req, res, next) => {
     agentLicence: req.body.agentLicence,
     address: req.body.address,
     practiceAreas: req.body.practiceAreas,
-    boutMe: req.body.boutMe,
-  });
+    aboutMe: req.body.aboutMe,
+  })
   return res.status(201).json({
     message: "created",
     status: true,
